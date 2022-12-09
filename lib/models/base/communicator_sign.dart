@@ -7,6 +7,10 @@ enum Sign {
   client,
   @JsonValue('iotDevices')
   iotDevices,
+  @JsonValue('upsData')
+  upsData,
+  @JsonValue('lampData')
+  lampData,
   unknown,
 }
 

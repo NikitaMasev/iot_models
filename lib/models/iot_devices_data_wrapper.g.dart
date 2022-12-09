@@ -25,5 +25,7 @@ Map<String, dynamic> _$IotDevicesDataWrapperToJson(
 const _$SignEnumMap = {
   Sign.client: 'client',
   Sign.iotDevices: 'iotDevices',
+  Sign.upsData: 'upsData',
+  Sign.lampData: 'lampData',
   Sign.unknown: 'unknown',
 };

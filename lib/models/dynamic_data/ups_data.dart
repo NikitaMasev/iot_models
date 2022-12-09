@@ -1,16 +1,18 @@
+import 'package:iot_models/models/base/communicator_sign.dart';
 import 'package:json_annotation/json_annotation.dart';
 
 part 'ups_data.g.dart';
 
 @JsonSerializable()
-class UpsData {
+class UpsData extends CommunicatorSign {
   UpsData({
-    required this.tempUps,
-    required this.tempAcc,
-    required this.pwmCooler,
-    required this.currentDC,
-    required this.voltageDC,
-  });
+    required final this.tempUps,
+    required final this.tempAcc,
+    required final this.pwmCooler,
+    required final this.currentDC,
+    required final this.voltageDC,
+    final Sign sign = Sign.lampData,
+  }) : super(sign: sign);
 
   factory UpsData.nonValid() => UpsData(
         tempUps: 0,

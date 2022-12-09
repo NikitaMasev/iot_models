@@ -1,5 +1,5 @@
 import 'package:iot_models/converters/iot_device_data_converter.dart';
-import 'package:iot_models/models/type_device.dart';
+import 'package:iot_models/models/base/type_device.dart';
 import 'package:json_annotation/json_annotation.dart';
 
 part 'iot_device.g.dart';

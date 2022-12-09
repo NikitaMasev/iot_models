@@ -1,7 +1,8 @@
 import 'dart:convert';
 
-import 'package:iot_models/models/lamp_data.dart';
-import 'package:iot_models/models/ups_data.dart';
+import 'package:iot_models/converters/partially_decoder_sign.dart';
+import 'package:iot_models/models/base/communicator_sign.dart';
+import 'package:iot_models/models/dynamic_data/ups_data.dart';
 import 'package:json_annotation/json_annotation.dart';
 
 class IotDeviceDataConverter implements JsonConverter<dynamic, String> {
@@ -9,15 +10,18 @@ class IotDeviceDataConverter implements JsonConverter<dynamic, String> {
 
   @override
   dynamic fromJson(final String json) {
-    if (json.isEmpty) {
-      return null;
-    }
-
+    final sign = partiallyDecodeSign(json);
     final map = jsonDecode(json) as Map<String, dynamic>;
-    if (map.containsKey('tempUps')) {
-      return UpsData.fromJson(map);
-    } else if (map.containsKey('controlPower')) {
-      return LampData.fromJson(map);
+
+    switch (sign) {
+      case Sign.client:
+      case Sign.iotDevices:
+      case Sign.upsData:
+        return UpsData.fromJson(map);
+      case Sign.lampData:
+        return UpsData.fromJson(map);
+      case Sign.unknown:
+        return null;
     }
   }
 

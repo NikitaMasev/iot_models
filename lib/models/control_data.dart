@@ -1,4 +1,4 @@
-import 'package:iot_models/models/type_device.dart';
+import 'package:iot_models/models/base/type_device.dart';
 import 'package:json_annotation/json_annotation.dart';
 
 part 'control_data.g.dart';

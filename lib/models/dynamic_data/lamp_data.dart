@@ -1,13 +1,15 @@
-import 'package:iot_models/models/type_device.dart';
+import 'package:iot_models/models/base/communicator_sign.dart';
+import 'package:iot_models/models/base/type_device.dart';
 import 'package:json_annotation/json_annotation.dart';
 
 part 'lamp_data.g.dart';
 
 @JsonSerializable()
-class LampData {
+class LampData extends CommunicatorSign {
   LampData({
     required this.controlPower,
-  });
+    final Sign sign = Sign.lampData,
+  }) : super(sign: sign);
 
   final TypeControl controlPower;
 
@@ -16,6 +18,4 @@ class LampData {
 
   @override
   Map<String, dynamic> toJson() => _$LampDataToJson(this);
-
-
 }
