@@ -1,16 +1,18 @@
 import 'dart:convert';
 
-import 'package:iot_models/converters/partially_decoder_sign.dart';
+import 'package:iot_models/adapters/communicator_sign_decoder_impl.dart';
 import 'package:iot_models/models/base/communicator_sign.dart';
 import 'package:iot_models/models/dynamic_data/ups_data.dart';
 import 'package:json_annotation/json_annotation.dart';
+
+const _instanceSignDecoder = CommunicatorSignDecoderImpl();
 
 class IotDeviceDataConverter implements JsonConverter<dynamic, String> {
   const IotDeviceDataConverter();
 
   @override
   dynamic fromJson(final String json) {
-    final sign = partiallyDecodeSign(json);
+    final sign = _instanceSignDecoder.decode(json);
     final map = jsonDecode(json) as Map<String, dynamic>;
 
     switch (sign) {

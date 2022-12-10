@@ -30,8 +30,8 @@ class IotDevice {
       );
 
   factory IotDevice.copyWith(
-      final IotDevice iotDevice,
-      ) =>
+    final IotDevice iotDevice,
+  ) =>
       IotDevice(
         id: iotDevice.id,
         typeDevice: iotDevice.typeDevice,
