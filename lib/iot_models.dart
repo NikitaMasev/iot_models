@@ -12,4 +12,4 @@ export 'models/dynamic_data/lamp_data.dart';
 export 'models/dynamic_data/ups_data.dart';
 export 'models/iot_device.dart';
 export 'models/iot_devices_data_wrapper.dart';
-//export 'models/iot_event.dart';
+export 'models/iot_event.dart';

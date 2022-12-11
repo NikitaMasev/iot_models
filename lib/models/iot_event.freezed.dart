@@ -43,26 +43,26 @@ mixin _$IotEvent {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(Empty value) empty,
-    required TResult Function(NeedRegister value) needRegister,
-    required TResult Function(Auth value) auth,
-    required TResult Function(Data value) data,
+    required TResult Function(_Empty value) empty,
+    required TResult Function(_NeedRegister value) needRegister,
+    required TResult Function(_Auth value) auth,
+    required TResult Function(_Data value) data,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(Empty value)? empty,
-    TResult? Function(NeedRegister value)? needRegister,
-    TResult? Function(Auth value)? auth,
-    TResult? Function(Data value)? data,
+    TResult? Function(_Empty value)? empty,
+    TResult? Function(_NeedRegister value)? needRegister,
+    TResult? Function(_Auth value)? auth,
+    TResult? Function(_Data value)? data,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(Empty value)? empty,
-    TResult Function(NeedRegister value)? needRegister,
-    TResult Function(Auth value)? auth,
-    TResult Function(Data value)? data,
+    TResult Function(_Empty value)? empty,
+    TResult Function(_NeedRegister value)? needRegister,
+    TResult Function(_Auth value)? auth,
+    TResult Function(_Data value)? data,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -86,22 +86,23 @@ class _$IotEventCopyWithImpl<$Res, $Val extends IotEvent>
 }
 
 /// @nodoc
-abstract class _$$EmptyCopyWith<$Res> {
-  factory _$$EmptyCopyWith(_$Empty value, $Res Function(_$Empty) then) =
-      __$$EmptyCopyWithImpl<$Res>;
+abstract class _$$_EmptyCopyWith<$Res> {
+  factory _$$_EmptyCopyWith(_$_Empty value, $Res Function(_$_Empty) then) =
+      __$$_EmptyCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$EmptyCopyWithImpl<$Res> extends _$IotEventCopyWithImpl<$Res, _$Empty>
-    implements _$$EmptyCopyWith<$Res> {
-  __$$EmptyCopyWithImpl(_$Empty _value, $Res Function(_$Empty) _then)
+class __$$_EmptyCopyWithImpl<$Res>
+    extends _$IotEventCopyWithImpl<$Res, _$_Empty>
+    implements _$$_EmptyCopyWith<$Res> {
+  __$$_EmptyCopyWithImpl(_$_Empty _value, $Res Function(_$_Empty) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$Empty implements Empty {
-  const _$Empty();
+class _$_Empty implements _Empty {
+  const _$_Empty();
 
   @override
   String toString() {
@@ -111,7 +112,7 @@ class _$Empty implements Empty {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$Empty);
+        (other.runtimeType == runtimeType && other is _$_Empty);
   }
 
   @override
@@ -157,10 +158,10 @@ class _$Empty implements Empty {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(Empty value) empty,
-    required TResult Function(NeedRegister value) needRegister,
-    required TResult Function(Auth value) auth,
-    required TResult Function(Data value) data,
+    required TResult Function(_Empty value) empty,
+    required TResult Function(_NeedRegister value) needRegister,
+    required TResult Function(_Auth value) auth,
+    required TResult Function(_Data value) data,
   }) {
     return empty(this);
   }
@@ -168,10 +169,10 @@ class _$Empty implements Empty {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(Empty value)? empty,
-    TResult? Function(NeedRegister value)? needRegister,
-    TResult? Function(Auth value)? auth,
-    TResult? Function(Data value)? data,
+    TResult? Function(_Empty value)? empty,
+    TResult? Function(_NeedRegister value)? needRegister,
+    TResult? Function(_Auth value)? auth,
+    TResult? Function(_Data value)? data,
   }) {
     return empty?.call(this);
   }
@@ -179,10 +180,10 @@ class _$Empty implements Empty {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(Empty value)? empty,
-    TResult Function(NeedRegister value)? needRegister,
-    TResult Function(Auth value)? auth,
-    TResult Function(Data value)? data,
+    TResult Function(_Empty value)? empty,
+    TResult Function(_NeedRegister value)? needRegister,
+    TResult Function(_Auth value)? auth,
+    TResult Function(_Data value)? data,
     required TResult orElse(),
   }) {
     if (empty != null) {
@@ -192,25 +193,25 @@ class _$Empty implements Empty {
   }
 }
 
-abstract class Empty implements IotEvent {
-  const factory Empty() = _$Empty;
+abstract class _Empty implements IotEvent {
+  const factory _Empty() = _$_Empty;
 }
 
 /// @nodoc
-abstract class _$$NeedRegisterCopyWith<$Res> {
-  factory _$$NeedRegisterCopyWith(
-          _$NeedRegister value, $Res Function(_$NeedRegister) then) =
-      __$$NeedRegisterCopyWithImpl<$Res>;
+abstract class _$$_NeedRegisterCopyWith<$Res> {
+  factory _$$_NeedRegisterCopyWith(
+          _$_NeedRegister value, $Res Function(_$_NeedRegister) then) =
+      __$$_NeedRegisterCopyWithImpl<$Res>;
   @useResult
   $Res call({TypeDevice typeDevice});
 }
 
 /// @nodoc
-class __$$NeedRegisterCopyWithImpl<$Res>
-    extends _$IotEventCopyWithImpl<$Res, _$NeedRegister>
-    implements _$$NeedRegisterCopyWith<$Res> {
-  __$$NeedRegisterCopyWithImpl(
-      _$NeedRegister _value, $Res Function(_$NeedRegister) _then)
+class __$$_NeedRegisterCopyWithImpl<$Res>
+    extends _$IotEventCopyWithImpl<$Res, _$_NeedRegister>
+    implements _$$_NeedRegisterCopyWith<$Res> {
+  __$$_NeedRegisterCopyWithImpl(
+      _$_NeedRegister _value, $Res Function(_$_NeedRegister) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -218,7 +219,7 @@ class __$$NeedRegisterCopyWithImpl<$Res>
   $Res call({
     Object? typeDevice = null,
   }) {
-    return _then(_$NeedRegister(
+    return _then(_$_NeedRegister(
       null == typeDevice
           ? _value.typeDevice
           : typeDevice // ignore: cast_nullable_to_non_nullable
@@ -229,8 +230,8 @@ class __$$NeedRegisterCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$NeedRegister implements NeedRegister {
-  const _$NeedRegister(this.typeDevice);
+class _$_NeedRegister implements _NeedRegister {
+  const _$_NeedRegister(this.typeDevice);
 
   @override
   final TypeDevice typeDevice;
@@ -244,7 +245,7 @@ class _$NeedRegister implements NeedRegister {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$NeedRegister &&
+            other is _$_NeedRegister &&
             (identical(other.typeDevice, typeDevice) ||
                 other.typeDevice == typeDevice));
   }
@@ -255,8 +256,8 @@ class _$NeedRegister implements NeedRegister {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$NeedRegisterCopyWith<_$NeedRegister> get copyWith =>
-      __$$NeedRegisterCopyWithImpl<_$NeedRegister>(this, _$identity);
+  _$$_NeedRegisterCopyWith<_$_NeedRegister> get copyWith =>
+      __$$_NeedRegisterCopyWithImpl<_$_NeedRegister>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -298,10 +299,10 @@ class _$NeedRegister implements NeedRegister {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(Empty value) empty,
-    required TResult Function(NeedRegister value) needRegister,
-    required TResult Function(Auth value) auth,
-    required TResult Function(Data value) data,
+    required TResult Function(_Empty value) empty,
+    required TResult Function(_NeedRegister value) needRegister,
+    required TResult Function(_Auth value) auth,
+    required TResult Function(_Data value) data,
   }) {
     return needRegister(this);
   }
@@ -309,10 +310,10 @@ class _$NeedRegister implements NeedRegister {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(Empty value)? empty,
-    TResult? Function(NeedRegister value)? needRegister,
-    TResult? Function(Auth value)? auth,
-    TResult? Function(Data value)? data,
+    TResult? Function(_Empty value)? empty,
+    TResult? Function(_NeedRegister value)? needRegister,
+    TResult? Function(_Auth value)? auth,
+    TResult? Function(_Data value)? data,
   }) {
     return needRegister?.call(this);
   }
@@ -320,10 +321,10 @@ class _$NeedRegister implements NeedRegister {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(Empty value)? empty,
-    TResult Function(NeedRegister value)? needRegister,
-    TResult Function(Auth value)? auth,
-    TResult Function(Data value)? data,
+    TResult Function(_Empty value)? empty,
+    TResult Function(_NeedRegister value)? needRegister,
+    TResult Function(_Auth value)? auth,
+    TResult Function(_Data value)? data,
     required TResult orElse(),
   }) {
     if (needRegister != null) {
@@ -333,27 +334,27 @@ class _$NeedRegister implements NeedRegister {
   }
 }
 
-abstract class NeedRegister implements IotEvent {
-  const factory NeedRegister(final TypeDevice typeDevice) = _$NeedRegister;
+abstract class _NeedRegister implements IotEvent {
+  const factory _NeedRegister(final TypeDevice typeDevice) = _$_NeedRegister;
 
   TypeDevice get typeDevice;
   @JsonKey(ignore: true)
-  _$$NeedRegisterCopyWith<_$NeedRegister> get copyWith =>
+  _$$_NeedRegisterCopyWith<_$_NeedRegister> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$AuthCopyWith<$Res> {
-  factory _$$AuthCopyWith(_$Auth value, $Res Function(_$Auth) then) =
-      __$$AuthCopyWithImpl<$Res>;
+abstract class _$$_AuthCopyWith<$Res> {
+  factory _$$_AuthCopyWith(_$_Auth value, $Res Function(_$_Auth) then) =
+      __$$_AuthCopyWithImpl<$Res>;
   @useResult
   $Res call({int id, TypeDevice typeDevice});
 }
 
 /// @nodoc
-class __$$AuthCopyWithImpl<$Res> extends _$IotEventCopyWithImpl<$Res, _$Auth>
-    implements _$$AuthCopyWith<$Res> {
-  __$$AuthCopyWithImpl(_$Auth _value, $Res Function(_$Auth) _then)
+class __$$_AuthCopyWithImpl<$Res> extends _$IotEventCopyWithImpl<$Res, _$_Auth>
+    implements _$$_AuthCopyWith<$Res> {
+  __$$_AuthCopyWithImpl(_$_Auth _value, $Res Function(_$_Auth) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -362,7 +363,7 @@ class __$$AuthCopyWithImpl<$Res> extends _$IotEventCopyWithImpl<$Res, _$Auth>
     Object? id = null,
     Object? typeDevice = null,
   }) {
-    return _then(_$Auth(
+    return _then(_$_Auth(
       null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
@@ -377,8 +378,8 @@ class __$$AuthCopyWithImpl<$Res> extends _$IotEventCopyWithImpl<$Res, _$Auth>
 
 /// @nodoc
 
-class _$Auth implements Auth {
-  const _$Auth(this.id, this.typeDevice);
+class _$_Auth implements _Auth {
+  const _$_Auth(this.id, this.typeDevice);
 
   @override
   final int id;
@@ -394,7 +395,7 @@ class _$Auth implements Auth {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$Auth &&
+            other is _$_Auth &&
             (identical(other.id, id) || other.id == id) &&
             (identical(other.typeDevice, typeDevice) ||
                 other.typeDevice == typeDevice));
@@ -406,8 +407,8 @@ class _$Auth implements Auth {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$AuthCopyWith<_$Auth> get copyWith =>
-      __$$AuthCopyWithImpl<_$Auth>(this, _$identity);
+  _$$_AuthCopyWith<_$_Auth> get copyWith =>
+      __$$_AuthCopyWithImpl<_$_Auth>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -449,10 +450,10 @@ class _$Auth implements Auth {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(Empty value) empty,
-    required TResult Function(NeedRegister value) needRegister,
-    required TResult Function(Auth value) auth,
-    required TResult Function(Data value) data,
+    required TResult Function(_Empty value) empty,
+    required TResult Function(_NeedRegister value) needRegister,
+    required TResult Function(_Auth value) auth,
+    required TResult Function(_Data value) data,
   }) {
     return auth(this);
   }
@@ -460,10 +461,10 @@ class _$Auth implements Auth {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(Empty value)? empty,
-    TResult? Function(NeedRegister value)? needRegister,
-    TResult? Function(Auth value)? auth,
-    TResult? Function(Data value)? data,
+    TResult? Function(_Empty value)? empty,
+    TResult? Function(_NeedRegister value)? needRegister,
+    TResult? Function(_Auth value)? auth,
+    TResult? Function(_Data value)? data,
   }) {
     return auth?.call(this);
   }
@@ -471,10 +472,10 @@ class _$Auth implements Auth {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(Empty value)? empty,
-    TResult Function(NeedRegister value)? needRegister,
-    TResult Function(Auth value)? auth,
-    TResult Function(Data value)? data,
+    TResult Function(_Empty value)? empty,
+    TResult Function(_NeedRegister value)? needRegister,
+    TResult Function(_Auth value)? auth,
+    TResult Function(_Data value)? data,
     required TResult orElse(),
   }) {
     if (auth != null) {
@@ -484,27 +485,27 @@ class _$Auth implements Auth {
   }
 }
 
-abstract class Auth implements IotEvent {
-  const factory Auth(final int id, final TypeDevice typeDevice) = _$Auth;
+abstract class _Auth implements IotEvent {
+  const factory _Auth(final int id, final TypeDevice typeDevice) = _$_Auth;
 
   int get id;
   TypeDevice get typeDevice;
   @JsonKey(ignore: true)
-  _$$AuthCopyWith<_$Auth> get copyWith => throw _privateConstructorUsedError;
+  _$$_AuthCopyWith<_$_Auth> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$DataCopyWith<$Res> {
-  factory _$$DataCopyWith(_$Data value, $Res Function(_$Data) then) =
-      __$$DataCopyWithImpl<$Res>;
+abstract class _$$_DataCopyWith<$Res> {
+  factory _$$_DataCopyWith(_$_Data value, $Res Function(_$_Data) then) =
+      __$$_DataCopyWithImpl<$Res>;
   @useResult
   $Res call({String data});
 }
 
 /// @nodoc
-class __$$DataCopyWithImpl<$Res> extends _$IotEventCopyWithImpl<$Res, _$Data>
-    implements _$$DataCopyWith<$Res> {
-  __$$DataCopyWithImpl(_$Data _value, $Res Function(_$Data) _then)
+class __$$_DataCopyWithImpl<$Res> extends _$IotEventCopyWithImpl<$Res, _$_Data>
+    implements _$$_DataCopyWith<$Res> {
+  __$$_DataCopyWithImpl(_$_Data _value, $Res Function(_$_Data) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -512,7 +513,7 @@ class __$$DataCopyWithImpl<$Res> extends _$IotEventCopyWithImpl<$Res, _$Data>
   $Res call({
     Object? data = null,
   }) {
-    return _then(_$Data(
+    return _then(_$_Data(
       null == data
           ? _value.data
           : data // ignore: cast_nullable_to_non_nullable
@@ -523,8 +524,8 @@ class __$$DataCopyWithImpl<$Res> extends _$IotEventCopyWithImpl<$Res, _$Data>
 
 /// @nodoc
 
-class _$Data implements Data {
-  const _$Data(this.data);
+class _$_Data implements _Data {
+  const _$_Data(this.data);
 
   @override
   final String data;
@@ -538,7 +539,7 @@ class _$Data implements Data {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$Data &&
+            other is _$_Data &&
             (identical(other.data, data) || other.data == data));
   }
 
@@ -548,8 +549,8 @@ class _$Data implements Data {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$DataCopyWith<_$Data> get copyWith =>
-      __$$DataCopyWithImpl<_$Data>(this, _$identity);
+  _$$_DataCopyWith<_$_Data> get copyWith =>
+      __$$_DataCopyWithImpl<_$_Data>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -591,10 +592,10 @@ class _$Data implements Data {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(Empty value) empty,
-    required TResult Function(NeedRegister value) needRegister,
-    required TResult Function(Auth value) auth,
-    required TResult Function(Data value) data,
+    required TResult Function(_Empty value) empty,
+    required TResult Function(_NeedRegister value) needRegister,
+    required TResult Function(_Auth value) auth,
+    required TResult Function(_Data value) data,
   }) {
     return data(this);
   }
@@ -602,10 +603,10 @@ class _$Data implements Data {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(Empty value)? empty,
-    TResult? Function(NeedRegister value)? needRegister,
-    TResult? Function(Auth value)? auth,
-    TResult? Function(Data value)? data,
+    TResult? Function(_Empty value)? empty,
+    TResult? Function(_NeedRegister value)? needRegister,
+    TResult? Function(_Auth value)? auth,
+    TResult? Function(_Data value)? data,
   }) {
     return data?.call(this);
   }
@@ -613,10 +614,10 @@ class _$Data implements Data {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(Empty value)? empty,
-    TResult Function(NeedRegister value)? needRegister,
-    TResult Function(Auth value)? auth,
-    TResult Function(Data value)? data,
+    TResult Function(_Empty value)? empty,
+    TResult Function(_NeedRegister value)? needRegister,
+    TResult Function(_Auth value)? auth,
+    TResult Function(_Data value)? data,
     required TResult orElse(),
   }) {
     if (data != null) {
@@ -626,10 +627,10 @@ class _$Data implements Data {
   }
 }
 
-abstract class Data implements IotEvent {
-  const factory Data(final String data) = _$Data;
+abstract class _Data implements IotEvent {
+  const factory _Data(final String data) = _$_Data;
 
   String get data;
   @JsonKey(ignore: true)
-  _$$DataCopyWith<_$Data> get copyWith => throw _privateConstructorUsedError;
+  _$$_DataCopyWith<_$_Data> get copyWith => throw _privateConstructorUsedError;
 }
