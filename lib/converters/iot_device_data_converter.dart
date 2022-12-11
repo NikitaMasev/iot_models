@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:iot_models/adapters/communicator_sign_decoder_impl.dart';
+import 'package:iot_models/codecs/communicator_sign_decoder_impl.dart';
 import 'package:iot_models/models/base/communicator_sign.dart';
 import 'package:iot_models/models/dynamic_data/ups_data.dart';
 import 'package:json_annotation/json_annotation.dart';
