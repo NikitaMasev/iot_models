@@ -10,7 +10,7 @@ UpsData _$UpsDataFromJson(Map<String, dynamic> json) => UpsData(
       tempUps: (json['tempUps'] as num).toDouble(),
       tempAcc: (json['tempAcc'] as num).toDouble(),
       pwmCooler: json['pwmCooler'] as int,
-      currentDC: json['currentDC'] as int,
+      currentDC: (json['currentDC'] as num).toDouble(),
       voltageDC: (json['voltageDC'] as num).toDouble(),
       sign: $enumDecodeNullable(_$SignEnumMap, json['sign']) ?? Sign.lampData,
     );

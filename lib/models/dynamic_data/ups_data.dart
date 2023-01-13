@@ -25,7 +25,7 @@ class UpsData extends CommunicatorSign {
   final double tempUps;
   final double tempAcc;
   final int pwmCooler;
-  final int currentDC;
+  final double currentDC;
   final double voltageDC;
 
   bool get isValid => pwmCooler != -500;
