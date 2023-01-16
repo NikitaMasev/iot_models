@@ -11,6 +11,8 @@ enum Sign {
   upsData,
   @JsonValue('lampData')
   lampData,
+  @JsonValue('ledData')
+  ledData,
   unknown,
 }
 

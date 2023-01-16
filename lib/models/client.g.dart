@@ -27,5 +27,6 @@ const _$SignEnumMap = {
   Sign.iotDevices: 'iotDevices',
   Sign.upsData: 'upsData',
   Sign.lampData: 'lampData',
+  Sign.ledData: 'ledData',
   Sign.unknown: 'unknown',
 };

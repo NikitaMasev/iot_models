@@ -1,19 +1,25 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'communicator_sign.dart';
+part of 'led_data.dart';
 
 // **************************************************************************
 // JsonSerializableGenerator
 // **************************************************************************
 
-CommunicatorSign _$CommunicatorSignFromJson(Map<String, dynamic> json) =>
-    CommunicatorSign(
-      sign: $enumDecode(_$SignEnumMap, json['sign']),
+LedData _$LedDataFromJson(Map<String, dynamic> json) => LedData(
+      h: json['h'] as int,
+      s: json['s'] as int,
+      v: json['v'] as int,
+      mode: json['mode'] as int,
+      sign: $enumDecodeNullable(_$SignEnumMap, json['sign']) ?? Sign.ledData,
     );
 
-Map<String, dynamic> _$CommunicatorSignToJson(CommunicatorSign instance) =>
-    <String, dynamic>{
+Map<String, dynamic> _$LedDataToJson(LedData instance) => <String, dynamic>{
       'sign': _$SignEnumMap[instance.sign]!,
+      'h': instance.h,
+      's': instance.s,
+      'v': instance.v,
+      'mode': instance.mode,
     };
 
 const _$SignEnumMap = {
