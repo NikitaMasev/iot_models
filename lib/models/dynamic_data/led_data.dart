@@ -18,6 +18,15 @@ class LedData extends CommunicatorSign {
   final int v;
   final int mode;
 
+  factory LedData.nonValid() => LedData(
+    h: 0,
+    s: 0,
+    v: 0,
+    mode: -1,
+  );
+
+  bool get isValid => mode != -1;
+
   factory LedData.fromJson(final Map<String, dynamic> json) =>
       _$LedDataFromJson(json);
 
