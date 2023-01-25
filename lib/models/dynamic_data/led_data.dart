@@ -10,6 +10,7 @@ class LedData extends CommunicatorSign {
     required this.s,
     required this.v,
     required this.mode,
+    required this.powerOn,
     final Sign sign = Sign.ledData,
   }) : super(sign: sign);
 
@@ -17,12 +18,14 @@ class LedData extends CommunicatorSign {
   final int s;
   final int v;
   final int mode;
+  final bool powerOn;
 
   factory LedData.nonValid() => LedData(
     h: 0,
     s: 0,
     v: 0,
     mode: -1,
+    powerOn: true,
   );
 
   bool get isValid => mode != -1;

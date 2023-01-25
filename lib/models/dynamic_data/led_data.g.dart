@@ -11,6 +11,7 @@ LedData _$LedDataFromJson(Map<String, dynamic> json) => LedData(
       s: json['s'] as int,
       v: json['v'] as int,
       mode: json['mode'] as int,
+      powerOn: json['powerOn'] as bool,
       sign: $enumDecodeNullable(_$SignEnumMap, json['sign']) ?? Sign.ledData,
     );
 
@@ -20,6 +21,7 @@ Map<String, dynamic> _$LedDataToJson(LedData instance) => <String, dynamic>{
       's': instance.s,
       'v': instance.v,
       'mode': instance.mode,
+      'powerOn': instance.powerOn,
     };
 
 const _$SignEnumMap = {
