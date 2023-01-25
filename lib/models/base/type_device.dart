@@ -28,16 +28,11 @@ const mapDevicesControls = <TypeDevice, List<TypeControl>>{
     TypeControl.register,
   ],
   TypeDevice.rgba: [
-    TypeControl.powerOn,
-    TypeControl.powerOff,
     TypeControl.rgba,
     TypeControl.changeName,
     TypeControl.register,
   ],
   TypeDevice.rgbaAddress: [
-    TypeControl.powerOn,
-    TypeControl.powerOff,
-    TypeControl.rgba,
     TypeControl.rgbaEffects,
     TypeControl.changeName,
     TypeControl.register,
