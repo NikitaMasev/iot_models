@@ -57,6 +57,7 @@ const typeControlFromString = {
   'rgbaEffects': TypeControl.rgbaEffects,
   'changeName': TypeControl.changeName,
   'register': TypeControl.register,
+  'reset': TypeControl.reset,
 };
 
 const typeControlToString = {
@@ -66,6 +67,7 @@ const typeControlToString = {
   TypeControl.rgbaEffects: 'rgbaEffects',
   TypeControl.changeName: 'changeName',
   TypeControl.register: 'register',
+  TypeControl.reset: 'reset',
 };
 
 const typeDeviceFromString = {
