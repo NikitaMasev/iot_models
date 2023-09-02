@@ -19,7 +19,7 @@ enum Sign {
 @JsonSerializable()
 class CommunicatorSign {
   CommunicatorSign({
-    required final this.sign,
+    required this.sign,
   });
 
   final Sign sign;

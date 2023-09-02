@@ -23,6 +23,7 @@ const _$TypeControlEnumMap = {
   TypeControl.rgbaEffects: 'rgbaEffects',
   TypeControl.changeName: 'changeName',
   TypeControl.register: 'register',
+  TypeControl.reset: 'reset',
 };
 
 const _$SignEnumMap = {
