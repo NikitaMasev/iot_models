@@ -53,15 +53,17 @@ class IotDevice {
   bool get isAuthorized => id != -1;
 
   @override
-  int get hashCode => id;
+  int get hashCode => Object.hash(id, typeDevice, name, data);
 
   @override
-  bool operator ==(final Object other) {
-    if (other is IotDevice) {
-      return id == other.id;
-    }
-    return false;
-  }
+  bool operator ==(Object other) =>
+      identical(this, other) ||
+      other is IotDevice &&
+          runtimeType == other.runtimeType &&
+          id == other.id &&
+          typeDevice == other.typeDevice &&
+          name == other.name &&
+          data == other.data;
 
   @override
   String toString() =>

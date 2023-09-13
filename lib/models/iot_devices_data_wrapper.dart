@@ -7,13 +7,24 @@ part 'iot_devices_data_wrapper.g.dart';
 @JsonSerializable()
 class IotDevicesDataWrapper extends CommunicatorSign {
   IotDevicesDataWrapper({
-    required final this.devices,
+    required this.devices,
     final Sign sign = Sign.iotDevices,
   }) : super(
           sign: sign,
         );
 
   final List<IotDevice> devices;
+
+
+  @override
+  bool operator ==(final Object other) =>
+      identical(this, other) ||
+      other is IotDevicesDataWrapper &&
+          runtimeType == other.runtimeType &&
+          devices == other.devices;
+
+  @override
+  int get hashCode => Object.hashAll(devices);
 
   @override
   Map<String, dynamic> toJson() => _$IotDevicesDataWrapperToJson(this);
