@@ -35,12 +35,16 @@ const mapDevicesControls = <TypeDevice, List<TypeControl>>{
     TypeControl.changeName,
     TypeControl.register,
     TypeControl.reset,
+    TypeControl.powerOn,
+    TypeControl.powerOff,
   ],
   TypeDevice.rgbaAddress: [
     TypeControl.rgbaEffects,
     TypeControl.changeName,
     TypeControl.register,
     TypeControl.reset,
+    TypeControl.powerOn,
+    TypeControl.powerOff,
   ],
   TypeDevice.tempSensor: [
     TypeControl.changeName,
