@@ -9,13 +9,14 @@ class IotDevice {
   const IotDevice({
     required this.id,
     required this.typeDevice,
-    this.name,
+    required this.name,
     this.data,
   });
 
   factory IotDevice.unAuthorized() => const IotDevice(
         id: -1,
         typeDevice: TypeDevice.unknown,
+        name: '',
       );
 
   factory IotDevice.copyWithData(
@@ -46,7 +47,7 @@ class IotDevice {
 
   final int id;
   final TypeDevice typeDevice;
-  final String? name;
+  final String name;
   @IotDeviceDataConverter()
   final dynamic data;
 

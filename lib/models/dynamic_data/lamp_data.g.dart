@@ -24,6 +24,7 @@ const _$TypeControlEnumMap = {
   TypeControl.changeName: 'changeName',
   TypeControl.register: 'register',
   TypeControl.reset: 'reset',
+  TypeControl.unknown: 'unknown',
 };
 
 const _$SignEnumMap = {

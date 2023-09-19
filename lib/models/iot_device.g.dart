@@ -9,7 +9,7 @@ part of 'iot_device.dart';
 IotDevice _$IotDeviceFromJson(Map<String, dynamic> json) => IotDevice(
       id: json['id'] as int,
       typeDevice: $enumDecode(_$TypeDeviceEnumMap, json['typeDevice']),
-      name: json['name'] as String?,
+      name: json['name'] as String,
       data: _$JsonConverterFromJson<String, dynamic>(
           json['data'], const IotDeviceDataConverter().fromJson),
     );
