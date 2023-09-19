@@ -3,6 +3,7 @@ library iot_models;
 export 'codecs/communicator_sign_decoder.dart';
 export 'codecs/communicator_sign_decoder_impl.dart';
 export 'converters/iot_device_data_converter.dart';
+export 'converters/type_device_displayable.dart';
 export 'models/base/communicator_sign.dart';
 export 'models/base/type_device.dart';
 export 'models/client.dart';
