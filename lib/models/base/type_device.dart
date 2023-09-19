@@ -15,6 +15,7 @@ enum TypeControl {
   changeName,
   register,
   reset,
+  unknown,
 }
 
 const mapDevicesControls = <TypeDevice, List<TypeControl>>{
@@ -52,42 +53,4 @@ const mapDevicesControls = <TypeDevice, List<TypeControl>>{
     TypeControl.reset,
   ],
   TypeDevice.unknown: [],
-};
-
-const typeControlFromString = {
-  'powerOn': TypeControl.powerOn,
-  'powerOff': TypeControl.powerOff,
-  'rgba': TypeControl.rgba,
-  'rgbaEffects': TypeControl.rgbaEffects,
-  'changeName': TypeControl.changeName,
-  'register': TypeControl.register,
-  'reset': TypeControl.reset,
-};
-
-const typeControlToString = {
-  TypeControl.powerOn: 'powerOn',
-  TypeControl.powerOff: 'powerOff',
-  TypeControl.rgba: 'rgba',
-  TypeControl.rgbaEffects: 'rgbaEffects',
-  TypeControl.changeName: 'changeName',
-  TypeControl.register: 'register',
-  TypeControl.reset: 'reset',
-};
-
-const typeDeviceFromString = {
-  'ups': TypeDevice.ups,
-  'lamp': TypeDevice.lamp,
-  'rgba': TypeDevice.rgba,
-  'rgbaAddress': TypeDevice.rgbaAddress,
-  'tempSensor': TypeDevice.tempSensor,
-  'unknown': TypeDevice.unknown,
-};
-
-const typeDeviceToString = {
-  TypeDevice.ups: 'ups',
-  TypeDevice.lamp: 'lamp',
-  TypeDevice.rgba: 'rgba',
-  TypeDevice.rgbaAddress: 'rgbaAddress',
-  TypeDevice.tempSensor: 'tempSensor',
-  TypeDevice.unknown: 'unknown',
 };
