@@ -6,12 +6,12 @@ part 'ups_data.g.dart';
 @JsonSerializable()
 class UpsData extends CommunicatorSign {
   UpsData({
-    required final this.tempUps,
-    required final this.tempAcc,
-    required final this.pwmCooler,
-    required final this.currentDC,
-    required final this.voltageDC,
-    final Sign sign = Sign.lampData,
+    required this.tempUps,
+    required this.tempAcc,
+    required this.pwmCooler,
+    required this.currentDC,
+    required this.voltageDC,
+    final Sign sign = Sign.upsData,
   }) : super(sign: sign);
 
   factory UpsData.nonValid() => UpsData(
