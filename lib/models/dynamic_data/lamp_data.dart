@@ -23,4 +23,14 @@ class LampData extends CommunicatorSign {
   String toString() {
     return 'LampData{controlPower: $controlPower}';
   }
+
+  @override
+  bool operator ==(Object other) =>
+      identical(this, other) ||
+      other is LampData &&
+          runtimeType == other.runtimeType &&
+          controlPower == other.controlPower;
+
+  @override
+  int get hashCode => controlPower.hashCode;
 }

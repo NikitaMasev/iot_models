@@ -40,4 +40,23 @@ class UpsData extends CommunicatorSign {
   String toString() =>
       '{tempUps: $tempUps, tempAcc: $tempAcc, pwmCooler: $pwmCooler,]'
       ' currentDC: $currentDC, voltageDC: $voltageDC}';
+
+  @override
+  bool operator ==(Object other) =>
+      identical(this, other) ||
+      other is UpsData &&
+          runtimeType == other.runtimeType &&
+          tempUps == other.tempUps &&
+          tempAcc == other.tempAcc &&
+          pwmCooler == other.pwmCooler &&
+          currentDC == other.currentDC &&
+          voltageDC == other.voltageDC;
+
+  @override
+  int get hashCode =>
+      tempUps.hashCode ^
+      tempAcc.hashCode ^
+      pwmCooler.hashCode ^
+      currentDC.hashCode ^
+      voltageDC.hashCode;
 }
