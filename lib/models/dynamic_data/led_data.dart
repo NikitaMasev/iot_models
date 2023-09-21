@@ -40,4 +40,19 @@ class LedData extends CommunicatorSign {
   String toString() {
     return 'LedData{h: $h, s: $s, v: $v, mode: $mode, powerOn: $powerOn}';
   }
+
+  @override
+  bool operator ==(Object other) =>
+      identical(this, other) ||
+      other is LedData &&
+          runtimeType == other.runtimeType &&
+          h == other.h &&
+          s == other.s &&
+          v == other.v &&
+          mode == other.mode &&
+          powerOn == other.powerOn;
+
+  @override
+  int get hashCode =>
+      h.hashCode ^ s.hashCode ^ v.hashCode ^ mode.hashCode ^ powerOn.hashCode;
 }
