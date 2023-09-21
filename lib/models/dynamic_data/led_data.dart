@@ -35,4 +35,9 @@ class LedData extends CommunicatorSign {
 
   @override
   Map<String, dynamic> toJson() => _$LedDataToJson(this);
+
+  @override
+  String toString() {
+    return 'LedData{h: $h, s: $s, v: $v, mode: $mode, powerOn: $powerOn}';
+  }
 }

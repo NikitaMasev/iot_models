@@ -15,7 +15,6 @@ class IotDevicesDataWrapper extends CommunicatorSign {
 
   final List<IotDevice> devices;
 
-
   @override
   bool operator ==(final Object other) =>
       identical(this, other) ||
@@ -31,4 +30,9 @@ class IotDevicesDataWrapper extends CommunicatorSign {
 
   factory IotDevicesDataWrapper.fromJson(final Map<String, dynamic> json) =>
       _$IotDevicesDataWrapperFromJson(json);
+
+  @override
+  String toString() {
+    return 'IotDevicesDataWrapper{devices: $devices}';
+  }
 }

@@ -27,4 +27,9 @@ class Client extends CommunicatorSign {
       _$ClientFromJson(json);
 
   Map<String, dynamic> toJson() => _$ClientToJson(this);
+
+  @override
+  String toString() {
+    return 'Client{id: $id, name: $name, controlData: $controlData}';
+  }
 }

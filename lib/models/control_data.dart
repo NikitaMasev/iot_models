@@ -6,8 +6,8 @@ part 'control_data.g.dart';
 @JsonSerializable()
 class ControlData {
   ControlData({
-    required final this.iotIdControl,
-    required final this.typeControl,
+    required this.iotIdControl,
+    required this.typeControl,
     this.configControl,
   });
 
@@ -19,4 +19,9 @@ class ControlData {
       _$ControlDataFromJson(json);
 
   Map<String, dynamic> toJson() => _$ControlDataToJson(this);
+
+  @override
+  String toString() {
+    return 'ControlData{iotIdControl: $iotIdControl, typeControl: $typeControl, configControl: $configControl}';
+  }
 }

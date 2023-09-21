@@ -18,4 +18,9 @@ class LampData extends CommunicatorSign {
 
   @override
   Map<String, dynamic> toJson() => _$LampDataToJson(this);
+
+  @override
+  String toString() {
+    return 'LampData{controlPower: $controlPower}';
+  }
 }
