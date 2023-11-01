@@ -13,6 +13,10 @@ class LampData extends CommunicatorSign {
 
   final TypeControl controlPower;
 
+  bool get isValid => controlPower != TypeControl.unknown;
+
+  factory LampData.nonValid() => LampData(controlPower: TypeControl.unknown);
+
   factory LampData.fromJson(final Map<String, dynamic> json) =>
       _$LampDataFromJson(json);
 

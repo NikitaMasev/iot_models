@@ -7,7 +7,7 @@ part 'led_cct_data.g.dart';
 class LedCctData extends CommunicatorSign {
   LedCctData({
     required this.brightness,
-  required this.colorTemperature,
+    required this.colorTemperature,
   }) : super(sign: Sign.ledCctData);
 
   ///0-255
@@ -17,6 +17,13 @@ class LedCctData extends CommunicatorSign {
   final int colorTemperature;
 
   bool get powerOn => brightness != 0;
+
+  bool get isValid => brightness != -1;
+
+  factory LedCctData.nonValid() => LedCctData(
+        brightness: -1,
+        colorTemperature: -1,
+      );
 
   factory LedCctData.fromJson(final Map<String, dynamic> json) =>
       _$LedCctDataFromJson(json);
