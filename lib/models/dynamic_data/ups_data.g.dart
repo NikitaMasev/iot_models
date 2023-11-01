@@ -30,5 +30,6 @@ const _$SignEnumMap = {
   Sign.upsData: 'upsData',
   Sign.lampData: 'lampData',
   Sign.ledData: 'ledData',
+  Sign.ledCctData: 'ledCctData',
   Sign.unknown: 'unknown',
 };

@@ -1,6 +1,7 @@
 import 'dart:convert';
 
 import 'package:iot_models/iot_models.dart';
+import 'package:iot_models/models/dynamic_data/led_cct_data.dart';
 import 'package:json_annotation/json_annotation.dart';
 
 const _instanceSignDecoder = CommunicatorSignDecoderImpl();
@@ -25,6 +26,8 @@ class IotDeviceDataConverter implements JsonConverter<dynamic, String> {
         return LedData.fromJson(map);
       case Sign.unknown:
         return null;
+      case Sign.ledCctData:
+        return LedCctData.fromJson(map);
     }
   }
 

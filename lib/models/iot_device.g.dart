@@ -26,6 +26,7 @@ const _$TypeDeviceEnumMap = {
   TypeDevice.lamp: 'lamp',
   TypeDevice.rgba: 'rgba',
   TypeDevice.rgbaAddress: 'rgbaAddress',
+  TypeDevice.ledCct: 'ledCct',
   TypeDevice.tempSensor: 'tempSensor',
   TypeDevice.unknown: 'unknown',
 };

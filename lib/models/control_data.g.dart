@@ -24,6 +24,7 @@ const _$TypeControlEnumMap = {
   TypeControl.powerOff: 'powerOff',
   TypeControl.rgba: 'rgba',
   TypeControl.rgbaEffects: 'rgbaEffects',
+  TypeControl.ledCct: 'ledCct',
   TypeControl.changeName: 'changeName',
   TypeControl.register: 'register',
   TypeControl.reset: 'reset',

@@ -3,6 +3,7 @@ enum TypeDevice {
   lamp,
   rgba,
   rgbaAddress,
+  ledCct,
   tempSensor,
   unknown,
 }
@@ -12,6 +13,7 @@ enum TypeControl {
   powerOff,
   rgba,
   rgbaEffects,
+  ledCct,
   changeName,
   register,
   reset,
@@ -41,6 +43,14 @@ const mapDevicesControls = <TypeDevice, List<TypeControl>>{
   ],
   TypeDevice.rgbaAddress: [
     TypeControl.rgbaEffects,
+    TypeControl.changeName,
+    TypeControl.register,
+    TypeControl.reset,
+    TypeControl.powerOn,
+    TypeControl.powerOff,
+  ],
+  TypeDevice.ledCct: [
+    TypeControl.ledCct,
     TypeControl.changeName,
     TypeControl.register,
     TypeControl.reset,

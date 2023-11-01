@@ -10,23 +10,28 @@ class LedData extends CommunicatorSign {
     required this.s,
     required this.v,
     required this.mode,
-    required this.powerOn,
-    final Sign sign = Sign.ledData,
-  }) : super(sign: sign);
+  }) : super(sign: Sign.ledData);
 
+  ///0-255
   final int h;
+
+  ///0-255
   final int s;
+
+  ///0-255
   final int v;
+
+  ///
   final int mode;
-  final bool powerOn;
 
   factory LedData.nonValid() => LedData(
-    h: 0,
-    s: 0,
-    v: 0,
-    mode: -1,
-    powerOn: true,
-  );
+        h: 0,
+        s: 0,
+        v: 0,
+        mode: -1,
+      );
+
+  bool get powerOn => v != 0;
 
   bool get isValid => mode != -1;
 
@@ -38,7 +43,7 @@ class LedData extends CommunicatorSign {
 
   @override
   String toString() {
-    return 'LedData{h: $h, s: $s, v: $v, mode: $mode, powerOn: $powerOn}';
+    return 'LedData{h: $h, s: $s, v: $v, mode: $mode}';
   }
 
   @override
@@ -49,10 +54,8 @@ class LedData extends CommunicatorSign {
           h == other.h &&
           s == other.s &&
           v == other.v &&
-          mode == other.mode &&
-          powerOn == other.powerOn;
+          mode == other.mode;
 
   @override
-  int get hashCode =>
-      h.hashCode ^ s.hashCode ^ v.hashCode ^ mode.hashCode ^ powerOn.hashCode;
+  int get hashCode => h.hashCode ^ s.hashCode ^ v.hashCode ^ mode.hashCode;
 }

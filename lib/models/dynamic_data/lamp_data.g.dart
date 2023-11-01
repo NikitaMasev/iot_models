@@ -21,6 +21,7 @@ const _$TypeControlEnumMap = {
   TypeControl.powerOff: 'powerOff',
   TypeControl.rgba: 'rgba',
   TypeControl.rgbaEffects: 'rgbaEffects',
+  TypeControl.ledCct: 'ledCct',
   TypeControl.changeName: 'changeName',
   TypeControl.register: 'register',
   TypeControl.reset: 'reset',
@@ -33,5 +34,6 @@ const _$SignEnumMap = {
   Sign.upsData: 'upsData',
   Sign.lampData: 'lampData',
   Sign.ledData: 'ledData',
+  Sign.ledCctData: 'ledCctData',
   Sign.unknown: 'unknown',
 };
