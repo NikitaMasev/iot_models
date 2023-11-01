@@ -8,11 +8,9 @@ part of 'lamp_data.dart';
 
 LampData _$LampDataFromJson(Map<String, dynamic> json) => LampData(
       controlPower: $enumDecode(_$TypeControlEnumMap, json['controlPower']),
-      sign: $enumDecodeNullable(_$SignEnumMap, json['sign']) ?? Sign.lampData,
     );
 
 Map<String, dynamic> _$LampDataToJson(LampData instance) => <String, dynamic>{
-      'sign': _$SignEnumMap[instance.sign]!,
       'controlPower': _$TypeControlEnumMap[instance.controlPower]!,
     };
 
@@ -26,14 +24,4 @@ const _$TypeControlEnumMap = {
   TypeControl.register: 'register',
   TypeControl.reset: 'reset',
   TypeControl.unknown: 'unknown',
-};
-
-const _$SignEnumMap = {
-  Sign.client: 'client',
-  Sign.iotDevices: 'iotDevices',
-  Sign.upsData: 'upsData',
-  Sign.lampData: 'lampData',
-  Sign.ledData: 'ledData',
-  Sign.ledCctData: 'ledCctData',
-  Sign.unknown: 'unknown',
 };
