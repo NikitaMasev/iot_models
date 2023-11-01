@@ -11,8 +11,7 @@ class UpsData extends CommunicatorSign {
     required this.pwmCooler,
     required this.currentDC,
     required this.voltageDC,
-    final Sign sign = Sign.upsData,
-  }) : super(sign: sign);
+  }) : super(sign: Sign.upsData);
 
   factory UpsData.nonValid() => UpsData(
         tempUps: 0,

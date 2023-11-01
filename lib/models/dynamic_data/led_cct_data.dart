@@ -8,6 +8,7 @@ class LedCctData extends CommunicatorSign {
   LedCctData({
     required this.brightness,
     required this.colorTemperature,
+    required this.powerOn,
   }) : super(sign: Sign.ledCctData);
 
   ///0-255
@@ -16,13 +17,14 @@ class LedCctData extends CommunicatorSign {
   ///0-255
   final int colorTemperature;
 
-  bool get powerOn => brightness != 0;
+  final bool powerOn;
 
   bool get isValid => brightness != -1;
 
   factory LedCctData.nonValid() => LedCctData(
         brightness: -1,
         colorTemperature: -1,
+        powerOn: false,
       );
 
   factory LedCctData.fromJson(final Map<String, dynamic> json) =>
@@ -37,13 +39,16 @@ class LedCctData extends CommunicatorSign {
       other is LedCctData &&
           runtimeType == other.runtimeType &&
           brightness == other.brightness &&
-          colorTemperature == other.colorTemperature;
+          colorTemperature == other.colorTemperature &&
+          powerOn == other.powerOn;
 
   @override
-  int get hashCode => brightness.hashCode ^ colorTemperature.hashCode;
+  int get hashCode =>
+      brightness.hashCode ^ colorTemperature.hashCode ^ powerOn.hashCode;
 
   @override
   String toString() {
-    return 'LedCctData{brightness: $brightness, colorTemperature: $colorTemperature}';
+    return 'LedCctData{brightness: $brightness,'
+        ' colorTemperature: $colorTemperature, powerOn: $powerOn}';
   }
 }
