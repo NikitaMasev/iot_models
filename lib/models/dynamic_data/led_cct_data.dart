@@ -9,7 +9,8 @@ class LedCctData extends CommunicatorSign {
     required this.brightness,
     required this.colorTemperature,
     required this.powerOn,
-  }) : super(sign: Sign.ledCctData);
+    final Sign sign = Sign.ledCctData,
+  }) : super(sign: sign);
 
   ///0-255
   final int brightness;

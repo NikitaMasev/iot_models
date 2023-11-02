@@ -11,7 +11,8 @@ class LedData extends CommunicatorSign {
     required this.v,
     required this.mode,
     required this.powerOn,
-  }) : super(sign: Sign.ledData);
+    final Sign sign = Sign.ledData,
+  }) : super(sign: sign);
 
   ///0-255
   final int h;

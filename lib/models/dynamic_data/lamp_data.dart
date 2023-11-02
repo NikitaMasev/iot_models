@@ -8,7 +8,8 @@ part 'lamp_data.g.dart';
 class LampData extends CommunicatorSign {
   LampData({
     required this.controlPower,
-  }) : super(sign: Sign.lampData);
+    final Sign sign = Sign.lampData,
+  }) : super(sign: sign);
 
   final TypeControl controlPower;
 
